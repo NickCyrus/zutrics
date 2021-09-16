@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="auth-wrapper">
-        <div class="auth-content test-pull">
-            
+        <div class="auth-content">
+
             <div class="card">
                 <form method="POST" id="form-login">
                     @csrf
@@ -26,9 +26,9 @@
                                             'atts'=>array("class"=>"alert alert-danger"),
                                             'text'=>"<i class='fa fa-info'></i> ".session('errorLogin') )) }}
                         @endif
-                        
+
                         <button class="btn btn-primary shadow-2 mb-4">Acceder</button>
-                        
+
                     </div>
                 </form>
             </div>
@@ -38,5 +38,5 @@
 @endsection
 
 @section('addFooter')
-    
+
 @endsection
