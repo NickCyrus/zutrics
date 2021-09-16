@@ -1,3 +1,29 @@
+@php
+    use App\Http\Controllers\ThemeController;
+    /*
+    data-url-prefix="/"
+    data-footer="true"
+    data-placement="horizontal"
+    data-behaviour="pinned"
+    data-layout="fluid"
+    data-radius="rounded"
+    data-color="light-blue"
+    data-navcolor="default"
+    data-show="true"
+    ata-dimension="desktop"
+    */
+    $html_tag_data = array('placement'=>"horizontal",
+                           'behaviour'=>"pinned",
+                           'layout'=>"fluid",
+                           'radius'=>"rounded",
+                           'color'=>"light-blue",
+                           'navcolor'=>"default",
+                           'show'=>"true",
+                           'footer'=>"true",
+                           'url-prefix'=>"/",
+                           'dimension'=>"desktop"
+                            );
+@endphp
 <!DOCTYPE html>
 <html lang="en" data-url-prefix="/" data-footer="true"
       @isset($html_tag_data) @foreach ($html_tag_data as $key=> $value)
