@@ -31,9 +31,6 @@ class AppServiceProvider extends ServiceProvider
         /* Start APP*/
             View::share('nameApp', (object)["value"=>'ASECAP']);
             View::share('shortNameApp', (object)["value"=>'ASECAP']);
-        /* Production App */
-            // View::share('nameApp', $config->getConfig('nameApp'));
-            // View::share('shortNameApp', $config->getConfig('shortNameApp'));
     }
 
 }

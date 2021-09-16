@@ -29,8 +29,8 @@ class CreateConfigsTable extends Migration
 
 
         DB::table("ac_configs")->insert([
-                                        ["keyconf" => "nameApp", "type" => "input", "value" => "Celsia - Sistema Gestión ZE" , "created_at"=> Carbon::now() ],
-                                        ["keyconf" => "shortNameApp", "type" => "input", "value" => "Sistema Gestión ZE" , "created_at"=> Carbon::now() ],
+                                        ["keyconf" => "nameApp", "type" => "input", "value" => "Dashboard" , "created_at"=> Carbon::now() ],
+                                        ["keyconf" => "shortNameApp", "type" => "input", "value" => "Dashboard" , "created_at"=> Carbon::now() ],
                                         ["keyconf" => "paginacion", "type" => "input", "value" => "30" , "created_at"=> Carbon::now()] ,
                                         ["keyconf" => "logoApp", "type" => "file", "value" => "" , "created_at"=> Carbon::now() ]
         ],true);
