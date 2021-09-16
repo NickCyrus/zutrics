@@ -84,6 +84,7 @@ class Settings {
   }
 
   _init () {
+      /*
     this._mergeOverridePrefix();
     this._mergeAttributesFromStorage();
     this._mergeOverrides();
@@ -93,6 +94,7 @@ class Settings {
     this._setActiveOptions();
     this._addListeners();
     this._setVisibility();
+    */
   }
 
   _mergeAttributesFromStorage () {

@@ -12,7 +12,7 @@
     data-show="true"
     ata-dimension="desktop"
     */
-    $html_tag_data = array('placement'=>"horizontal",
+    $html_tag_data = array('placement'=>"vertical",
                            'behaviour'=>"pinned",
                            'layout'=>"fluid",
                            'radius'=>"rounded",
