@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="auth-wrapper">
-        <div class="auth-content">
+        <div class="auth-content test-pull">
             
             <div class="card">
                 <form method="POST" id="form-login">
