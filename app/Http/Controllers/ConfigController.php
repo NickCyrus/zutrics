@@ -7,9 +7,9 @@ use DB;
 
 class ConfigController extends Controller
 {
-    public function getConfig($key = ''){
-        if (DB::connection('sqlsrv')){
-            $rs = DB::table('configs')->where('keyconf', $key )->first();
+    static public function getConfig($key = ''){
+        if (DB::connection('mysql')){
+            $rs = DB::table('ac_configs')->where('keyconf', $key )->first();
             return $rs;
         }
     }

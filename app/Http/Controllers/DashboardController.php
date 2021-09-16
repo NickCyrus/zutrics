@@ -11,7 +11,11 @@ class DashboardController extends Controller
 
         public function index(){
 
-            return view('dashboard');
+            $theme = Config::getConfig('theme');
+            if (!$theme->value)
+                return view('dashboard.selecttheme');
+             else
+                return view('dashboard');
 
         }
 
