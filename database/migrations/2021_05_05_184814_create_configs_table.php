@@ -32,7 +32,11 @@ class CreateConfigsTable extends Migration
                                         ["keyconf" => "nameApp", "type" => "input", "value" => "Dashboard" , "created_at"=> Carbon::now() ],
                                         ["keyconf" => "shortNameApp", "type" => "input", "value" => "Dashboard" , "created_at"=> Carbon::now() ],
                                         ["keyconf" => "paginacion", "type" => "input", "value" => "30" , "created_at"=> Carbon::now()] ,
-                                        ["keyconf" => "logoApp", "type" => "file", "value" => "" , "created_at"=> Carbon::now() ]
+                                        ["keyconf" => "logoApp", "type" => "file", "value" => "" , "created_at"=> Carbon::now() ],
+                                        ["keyconf" => "theme", "type" => "input", "value" => "" , "created_at"=> Carbon::now() ],
+                                        ["keyconf" => "themecol", "type" => "input", "value" => "" , "created_at"=> Carbon::now() ],
+                                        ["keyconf" => "language", "type" => "input", "value" => "en" , "created_at"=> Carbon::now() ]
+
         ],true);
 
 
