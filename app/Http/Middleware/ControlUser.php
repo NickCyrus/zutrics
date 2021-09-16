@@ -29,6 +29,7 @@ class ControlUser
 
         // Si está autenticado se verifica
         if (auth()->check()){
+
             $modAccess    = LoginAdmin::getModulesAccess();
             $ModAct       = explode('.',Route::currentRouteName());
             $checkAction  = array('aview'=>'index','aedit'=>'edit','anew'=>'create');
@@ -38,7 +39,6 @@ class ControlUser
             $autorizado  = true;
 
             if ($moduleSelect){
-
 
                 switch($ModAct[1]){
                     case 'index':

@@ -230,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'Tools' => App\Http\Controllers\ToolsController::class,
+        'Config' => App\Http\Controllers\ConfigController::class,
 
     ],
 
