@@ -1,0 +1,52 @@
+@import url('../assets/fonts/simple-line-icons/simple-line-icons.css');
+.hand{ cursor: pointer !important; }
+
+.table-slim td, .table-slim th{
+    padding: .75rem;
+    vertical-align: middle;
+}
+
+.pull-right{ float: right; }
+.pull-left{ float: left; }
+.fz-20{
+    font-size:20px !important;
+}
+
+td.data{
+    font-weight: bold;
+    background:#f7f7f7;
+}
+
+tr.cap:hover{
+    background:none !important;
+}
+tr.cap{
+    border-bottom: 5px solid #f7f7f7;
+}
+
+.cap td{
+    font-weight: bold;
+}
+
+.table thead th{
+    border: none !important;
+    border-bottom: 3px solid #e6e6e6 !important;
+}
+
+.card .card-header h5{
+    font-size: 38px;
+}
+
+.bold , .b{ font-weight: bold; }
+.subline { text-decoration: underline; }
+
+.error-field{
+    color: #de7171;
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple{
+    min-height: 43px;
+}

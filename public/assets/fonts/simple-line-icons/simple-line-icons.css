@@ -1,0 +1,795 @@
+@font-face {
+  font-family: 'simple-line-icons';
+  src: url('simple-line-icons/fonts/Simple-Line-Icons.eot?v=2.4.0');
+  src: url('simple-line-icons/fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'),
+        url('fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+ Use the following CSS code if you want to have a class per icon.
+ Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower:
+*/
+
+.simple-line {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'simple-line-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sline-icon-user,
+.sline-icon-people,
+.sline-icon-user-female,
+.sline-icon-user-follow,
+.sline-icon-user-following,
+.sline-icon-user-unfollow,
+.sline-icon-login,
+.sline-icon-logout,
+.sline-icon-emotsmile,
+.sline-icon-phone,
+.sline-icon-call-end,
+.sline-icon-call-in,
+.sline-icon-call-out,
+.sline-icon-map,
+.sline-icon-location-pin,
+.sline-icon-direction,
+.sline-icon-directions,
+.sline-icon-compass,
+.sline-icon-layers,
+.sline-icon-menu,
+.sline-icon-list,
+.sline-icon-options-vertical,
+.sline-icon-options,
+.sline-icon-arrow-down,
+.sline-icon-arrow-left,
+.sline-icon-arrow-right,
+.sline-icon-arrow-up,
+.sline-icon-arrow-up-circle,
+.sline-icon-arrow-left-circle,
+.sline-icon-arrow-right-circle,
+.sline-icon-arrow-down-circle,
+.sline-icon-check,
+.sline-icon-clock,
+.sline-icon-plus,
+.sline-icon-minus,
+.sline-icon-close,
+.sline-icon-event,
+.sline-icon-exclamation,
+.sline-icon-organization,
+.sline-icon-trophy,
+.sline-icon-screen-smartphone,
+.sline-icon-screen-desktop,
+.sline-icon-plane,
+.sline-icon-notebook,
+.sline-icon-mustache,
+.sline-icon-mouse,
+.sline-icon-magnet,
+.sline-icon-energy,
+.sline-icon-disc,
+.sline-icon-cursor,
+.sline-icon-cursor-move,
+.sline-icon-crop,
+.sline-icon-chemistry,
+.sline-icon-speedometer,
+.sline-icon-shield,
+.sline-icon-screen-tablet,
+.sline-icon-magic-wand,
+.sline-icon-hourglass,
+.sline-icon-graduation,
+.sline-icon-ghost,
+.sline-icon-game-controller,
+.sline-icon-fire,
+.sline-icon-eyeglass,
+.sline-icon-envelope-open,
+.sline-icon-envelope-letter,
+.sline-icon-bell,
+.sline-icon-badge,
+.sline-icon-anchor,
+.sline-icon-wallet,
+.sline-icon-vector,
+.sline-icon-speech,
+.sline-icon-puzzle,
+.sline-icon-printer,
+.sline-icon-present,
+.sline-icon-playlist,
+.sline-icon-pin,
+.sline-icon-picture,
+.sline-icon-handbag,
+.sline-icon-globe-alt,
+.sline-icon-globe,
+.sline-icon-folder-alt,
+.sline-icon-folder,
+.sline-icon-film,
+.sline-icon-feed,
+.sline-icon-drop,
+.sline-icon-drawer,
+.sline-icon-docs,
+.sline-icon-doc,
+.sline-icon-diamond,
+.sline-icon-cup,
+.sline-icon-calculator,
+.sline-icon-bubbles,
+.sline-icon-briefcase,
+.sline-icon-book-open,
+.sline-icon-basket-loaded,
+.sline-icon-basket,
+.sline-icon-bag,
+.sline-icon-action-undo,
+.sline-icon-action-redo,
+.sline-icon-wrench,
+.sline-icon-umbrella,
+.sline-icon-trash,
+.sline-icon-tag,
+.sline-icon-support,
+.sline-icon-frame,
+.sline-icon-size-fullscreen,
+.sline-icon-size-actual,
+.sline-icon-shuffle,
+.sline-icon-share-alt,
+.sline-icon-share,
+.sline-icon-rocket,
+.sline-icon-question,
+.sline-icon-pie-chart,
+.sline-icon-pencil,
+.sline-icon-note,
+.sline-icon-loop,
+.sline-icon-home,
+.sline-icon-grid,
+.sline-icon-graph,
+.sline-icon-microphone,
+.sline-icon-music-tone-alt,
+.sline-icon-music-tone,
+.sline-icon-earphones-alt,
+.sline-icon-earphones,
+.sline-icon-equalizer,
+.sline-icon-like,
+.sline-icon-dislike,
+.sline-icon-control-start,
+.sline-icon-control-rewind,
+.sline-icon-control-play,
+.sline-icon-control-pause,
+.sline-icon-control-forward,
+.sline-icon-control-end,
+.sline-icon-volume-1,
+.sline-icon-volume-2,
+.sline-icon-volume-off,
+.sline-icon-calendar,
+.sline-icon-bulb,
+.sline-icon-chart,
+.sline-icon-ban,
+.sline-icon-bubble,
+.sline-icon-camrecorder,
+.sline-icon-camera,
+.sline-icon-cloud-download,
+.sline-icon-cloud-upload,
+.sline-icon-envelope,
+.sline-icon-eye,
+.sline-icon-flag,
+.sline-icon-heart,
+.sline-icon-info,
+.sline-icon-key,
+.sline-icon-link,
+.sline-icon-lock,
+.sline-icon-lock-open,
+.sline-icon-magnifier,
+.sline-icon-magnifier-add,
+.sline-icon-magnifier-remove,
+.sline-icon-paper-clip,
+.sline-icon-paper-plane,
+.sline-icon-power,
+.sline-icon-refresh,
+.sline-icon-reload,
+.sline-icon-settings,
+.sline-icon-star,
+.sline-icon-symbol-female,
+.sline-icon-symbol-male,
+.sline-icon-target,
+.sline-icon-credit-card,
+.sline-icon-paypal,
+.sline-icon-social-tumblr,
+.sline-icon-social-twitter,
+.sline-icon-social-facebook,
+.sline-icon-social-instagram,
+.sline-icon-social-linkedin,
+.sline-icon-social-pinterest,
+.sline-icon-social-github,
+.sline-icon-social-google,
+.sline-icon-social-reddit,
+.sline-icon-social-skype,
+.sline-icon-social-dribbble,
+.sline-icon-social-behance,
+.sline-icon-social-foursqare,
+.sline-icon-social-soundcloud,
+.sline-icon-social-spotify,
+.sline-icon-social-stumbleupon,
+.sline-icon-social-youtube,
+.sline-icon-social-dropbox,
+.sline-icon-social-vkontakte,
+.sline-icon-social-steam {
+  font-family: 'simple-line-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sline-icon-user:before {
+  content: "\e005";
+}
+.sline-icon-people:before {
+  content: "\e001";
+}
+.sline-icon-user-female:before {
+  content: "\e000";
+}
+.sline-icon-user-follow:before {
+  content: "\e002";
+}
+.sline-icon-user-following:before {
+  content: "\e003";
+}
+.sline-icon-user-unfollow:before {
+  content: "\e004";
+}
+.sline-icon-login:before {
+  content: "\e066";
+}
+.sline-icon-logout:before {
+  content: "\e065";
+}
+.sline-icon-emotsmile:before {
+  content: "\e021";
+}
+.sline-icon-phone:before {
+  content: "\e600";
+}
+.sline-icon-call-end:before {
+  content: "\e048";
+}
+.sline-icon-call-in:before {
+  content: "\e047";
+}
+.sline-icon-call-out:before {
+  content: "\e046";
+}
+.sline-icon-map:before {
+  content: "\e033";
+}
+.sline-icon-location-pin:before {
+  content: "\e096";
+}
+.sline-icon-direction:before {
+  content: "\e042";
+}
+.sline-icon-directions:before {
+  content: "\e041";
+}
+.sline-icon-compass:before {
+  content: "\e045";
+}
+.sline-icon-layers:before {
+  content: "\e034";
+}
+.sline-icon-menu:before {
+  content: "\e601";
+}
+.sline-icon-list:before {
+  content: "\e067";
+}
+.sline-icon-options-vertical:before {
+  content: "\e602";
+}
+.sline-icon-options:before {
+  content: "\e603";
+}
+.sline-icon-arrow-down:before {
+  content: "\e604";
+}
+.sline-icon-arrow-left:before {
+  content: "\e605";
+}
+.sline-icon-arrow-right:before {
+  content: "\e606";
+}
+.sline-icon-arrow-up:before {
+  content: "\e607";
+}
+.sline-icon-arrow-up-circle:before {
+  content: "\e078";
+}
+.sline-icon-arrow-left-circle:before {
+  content: "\e07a";
+}
+.sline-icon-arrow-right-circle:before {
+  content: "\e079";
+}
+.sline-icon-arrow-down-circle:before {
+  content: "\e07b";
+}
+.sline-icon-check:before {
+  content: "\e080";
+}
+.sline-icon-clock:before {
+  content: "\e081";
+}
+.sline-icon-plus:before {
+  content: "\e095";
+}
+.sline-icon-minus:before {
+  content: "\e615";
+}
+.sline-icon-close:before {
+  content: "\e082";
+}
+.sline-icon-event:before {
+  content: "\e619";
+}
+.sline-icon-exclamation:before {
+  content: "\e617";
+}
+.sline-icon-organization:before {
+  content: "\e616";
+}
+.sline-icon-trophy:before {
+  content: "\e006";
+}
+.sline-icon-screen-smartphone:before {
+  content: "\e010";
+}
+.sline-icon-screen-desktop:before {
+  content: "\e011";
+}
+.sline-icon-plane:before {
+  content: "\e012";
+}
+.sline-icon-notebook:before {
+  content: "\e013";
+}
+.sline-icon-mustache:before {
+  content: "\e014";
+}
+.sline-icon-mouse:before {
+  content: "\e015";
+}
+.sline-icon-magnet:before {
+  content: "\e016";
+}
+.sline-icon-energy:before {
+  content: "\e020";
+}
+.sline-icon-disc:before {
+  content: "\e022";
+}
+.sline-icon-cursor:before {
+  content: "\e06e";
+}
+.sline-icon-cursor-move:before {
+  content: "\e023";
+}
+.sline-icon-crop:before {
+  content: "\e024";
+}
+.sline-icon-chemistry:before {
+  content: "\e026";
+}
+.sline-icon-speedometer:before {
+  content: "\e007";
+}
+.sline-icon-shield:before {
+  content: "\e00e";
+}
+.sline-icon-screen-tablet:before {
+  content: "\e00f";
+}
+.sline-icon-magic-wand:before {
+  content: "\e017";
+}
+.sline-icon-hourglass:before {
+  content: "\e018";
+}
+.sline-icon-graduation:before {
+  content: "\e019";
+}
+.sline-icon-ghost:before {
+  content: "\e01a";
+}
+.sline-icon-game-controller:before {
+  content: "\e01b";
+}
+.sline-icon-fire:before {
+  content: "\e01c";
+}
+.sline-icon-eyeglass:before {
+  content: "\e01d";
+}
+.sline-icon-envelope-open:before {
+  content: "\e01e";
+}
+.sline-icon-envelope-letter:before {
+  content: "\e01f";
+}
+.sline-icon-bell:before {
+  content: "\e027";
+}
+.sline-icon-badge:before {
+  content: "\e028";
+}
+.sline-icon-anchor:before {
+  content: "\e029";
+}
+.sline-icon-wallet:before {
+  content: "\e02a";
+}
+.sline-icon-vector:before {
+  content: "\e02b";
+}
+.sline-icon-speech:before {
+  content: "\e02c";
+}
+.sline-icon-puzzle:before {
+  content: "\e02d";
+}
+.sline-icon-printer:before {
+  content: "\e02e";
+}
+.sline-icon-present:before {
+  content: "\e02f";
+}
+.sline-icon-playlist:before {
+  content: "\e030";
+}
+.sline-icon-pin:before {
+  content: "\e031";
+}
+.sline-icon-picture:before {
+  content: "\e032";
+}
+.sline-icon-handbag:before {
+  content: "\e035";
+}
+.sline-icon-globe-alt:before {
+  content: "\e036";
+}
+.sline-icon-globe:before {
+  content: "\e037";
+}
+.sline-icon-folder-alt:before {
+  content: "\e039";
+}
+.sline-icon-folder:before {
+  content: "\e089";
+}
+.sline-icon-film:before {
+  content: "\e03a";
+}
+.sline-icon-feed:before {
+  content: "\e03b";
+}
+.sline-icon-drop:before {
+  content: "\e03e";
+}
+.sline-icon-drawer:before {
+  content: "\e03f";
+}
+.sline-icon-docs:before {
+  content: "\e040";
+}
+.sline-icon-doc:before {
+  content: "\e085";
+}
+.sline-icon-diamond:before {
+  content: "\e043";
+}
+.sline-icon-cup:before {
+  content: "\e044";
+}
+.sline-icon-calculator:before {
+  content: "\e049";
+}
+.sline-icon-bubbles:before {
+  content: "\e04a";
+}
+.sline-icon-briefcase:before {
+  content: "\e04b";
+}
+.sline-icon-book-open:before {
+  content: "\e04c";
+}
+.sline-icon-basket-loaded:before {
+  content: "\e04d";
+}
+.sline-icon-basket:before {
+  content: "\e04e";
+}
+.sline-icon-bag:before {
+  content: "\e04f";
+}
+.sline-icon-action-undo:before {
+  content: "\e050";
+}
+.sline-icon-action-redo:before {
+  content: "\e051";
+}
+.sline-icon-wrench:before {
+  content: "\e052";
+}
+.sline-icon-umbrella:before {
+  content: "\e053";
+}
+.sline-icon-trash:before {
+  content: "\e054";
+}
+.sline-icon-tag:before {
+  content: "\e055";
+}
+.sline-icon-support:before {
+  content: "\e056";
+}
+.sline-icon-frame:before {
+  content: "\e038";
+}
+.sline-icon-size-fullscreen:before {
+  content: "\e057";
+}
+.sline-icon-size-actual:before {
+  content: "\e058";
+}
+.sline-icon-shuffle:before {
+  content: "\e059";
+}
+.sline-icon-share-alt:before {
+  content: "\e05a";
+}
+.sline-icon-share:before {
+  content: "\e05b";
+}
+.sline-icon-rocket:before {
+  content: "\e05c";
+}
+.sline-icon-question:before {
+  content: "\e05d";
+}
+.sline-icon-pie-chart:before {
+  content: "\e05e";
+}
+.sline-icon-pencil:before {
+  content: "\e05f";
+}
+.sline-icon-note:before {
+  content: "\e060";
+}
+.sline-icon-loop:before {
+  content: "\e064";
+}
+.sline-icon-home:before {
+  content: "\e069";
+}
+.sline-icon-grid:before {
+  content: "\e06a";
+}
+.sline-icon-graph:before {
+  content: "\e06b";
+}
+.sline-icon-microphone:before {
+  content: "\e063";
+}
+.sline-icon-music-tone-alt:before {
+  content: "\e061";
+}
+.sline-icon-music-tone:before {
+  content: "\e062";
+}
+.sline-icon-earphones-alt:before {
+  content: "\e03c";
+}
+.sline-icon-earphones:before {
+  content: "\e03d";
+}
+.sline-icon-equalizer:before {
+  content: "\e06c";
+}
+.sline-icon-like:before {
+  content: "\e068";
+}
+.sline-icon-dislike:before {
+  content: "\e06d";
+}
+.sline-icon-control-start:before {
+  content: "\e06f";
+}
+.sline-icon-control-rewind:before {
+  content: "\e070";
+}
+.sline-icon-control-play:before {
+  content: "\e071";
+}
+.sline-icon-control-pause:before {
+  content: "\e072";
+}
+.sline-icon-control-forward:before {
+  content: "\e073";
+}
+.sline-icon-control-end:before {
+  content: "\e074";
+}
+.sline-icon-volume-1:before {
+  content: "\e09f";
+}
+.sline-icon-volume-2:before {
+  content: "\e0a0";
+}
+.sline-icon-volume-off:before {
+  content: "\e0a1";
+}
+.sline-icon-calendar:before {
+  content: "\e075";
+}
+.sline-icon-bulb:before {
+  content: "\e076";
+}
+.sline-icon-chart:before {
+  content: "\e077";
+}
+.sline-icon-ban:before {
+  content: "\e07c";
+}
+.sline-icon-bubble:before {
+  content: "\e07d";
+}
+.sline-icon-camrecorder:before {
+  content: "\e07e";
+}
+.sline-icon-camera:before {
+  content: "\e07f";
+}
+.sline-icon-cloud-download:before {
+  content: "\e083";
+}
+.sline-icon-cloud-upload:before {
+  content: "\e084";
+}
+.sline-icon-envelope:before {
+  content: "\e086";
+}
+.sline-icon-eye:before {
+  content: "\e087";
+}
+.sline-icon-flag:before {
+  content: "\e088";
+}
+.sline-icon-heart:before {
+  content: "\e08a";
+}
+.sline-icon-info:before {
+  content: "\e08b";
+}
+.sline-icon-key:before {
+  content: "\e08c";
+}
+.sline-icon-link:before {
+  content: "\e08d";
+}
+.sline-icon-lock:before {
+  content: "\e08e";
+}
+.sline-icon-lock-open:before {
+  content: "\e08f";
+}
+.sline-icon-magnifier:before {
+  content: "\e090";
+}
+.sline-icon-magnifier-add:before {
+  content: "\e091";
+}
+.sline-icon-magnifier-remove:before {
+  content: "\e092";
+}
+.sline-icon-paper-clip:before {
+  content: "\e093";
+}
+.sline-icon-paper-plane:before {
+  content: "\e094";
+}
+.sline-icon-power:before {
+  content: "\e097";
+}
+.sline-icon-refresh:before {
+  content: "\e098";
+}
+.sline-icon-reload:before {
+  content: "\e099";
+}
+.sline-icon-settings:before {
+  content: "\e09a";
+}
+.sline-icon-star:before {
+  content: "\e09b";
+}
+.sline-icon-symbol-female:before {
+  content: "\e09c";
+}
+.sline-icon-symbol-male:before {
+  content: "\e09d";
+}
+.sline-icon-target:before {
+  content: "\e09e";
+}
+.sline-icon-credit-card:before {
+  content: "\e025";
+}
+.sline-icon-paypal:before {
+  content: "\e608";
+}
+.sline-icon-social-tumblr:before {
+  content: "\e00a";
+}
+.sline-icon-social-twitter:before {
+  content: "\e009";
+}
+.sline-icon-social-facebook:before {
+  content: "\e00b";
+}
+.sline-icon-social-instagram:before {
+  content: "\e609";
+}
+.sline-icon-social-linkedin:before {
+  content: "\e60a";
+}
+.sline-icon-social-pinterest:before {
+  content: "\e60b";
+}
+.sline-icon-social-github:before {
+  content: "\e60c";
+}
+.sline-icon-social-google:before {
+  content: "\e60d";
+}
+.sline-icon-social-reddit:before {
+  content: "\e60e";
+}
+.sline-icon-social-skype:before {
+  content: "\e60f";
+}
+.sline-icon-social-dribbble:before {
+  content: "\e00d";
+}
+.sline-icon-social-behance:before {
+  content: "\e610";
+}
+.sline-icon-social-foursqare:before {
+  content: "\e611";
+}
+.sline-icon-social-soundcloud:before {
+  content: "\e612";
+}
+.sline-icon-social-spotify:before {
+  content: "\e613";
+}
+.sline-icon-social-stumbleupon:before {
+  content: "\e614";
+}
+.sline-icon-social-youtube:before {
+  content: "\e008";
+}
+.sline-icon-social-dropbox:before {
+  content: "\e00c";
+}
+.sline-icon-social-vkontakte:before {
+  content: "\e618";
+}
+.sline-icon-social-steam:before {
+  content: "\e620";
+}

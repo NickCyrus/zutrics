@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/asecroph/dashboard.asecap.co/
+    - /bin/cp -R public/ $DEPLOYPATH
