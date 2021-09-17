@@ -23,6 +23,7 @@ Route::get('/login', function () { return view('pages.authentication.login'); })
 Route::get('/errorAccess',function(){ return view('accesoinvalido'); })->name('errorAccess');
 
 Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
+
     Route::get('/', function () { return view('dashboard'); });
 
 
@@ -42,18 +43,7 @@ Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
 
 
     Route::resource('modules', ModulesController::class);
-    Route::resource('empresas', EmpresasController::class);
-
-    Route::post('empresas/buscador', [EmpresasController::class,'buscador']);
-
-    Route::resource('zonasespeciales', zonasespecialesController::class);
-
-    Route::resource('trafos', TrafosController::class);
-
-
     Route::get('tools/showicons', function () { return view('tools.showIcons'); });
-
-
     Route::get('logsusers/reloadLogsUser/{id}', [logsusers::class,'reloadLogsUser']);
     Route::resource('logsusers', logsusers::class);
 
