@@ -12,28 +12,15 @@ use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\logsusers;
 use App\Http\Controllers\DashboardController;
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/login', function () {  return view('login'); });
 
 Route::get('logout', [LoginAdmin::class,'logout']);
 
 Route::post('/login', [LoginAdmin::class,'login']);
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/login', function () { return view('pages.authentication.login'); })->name('login');
 
-Route::get('/errorAccess',function(){
-    return view('accesoinvalido');
-})->name('errorAccess');
-
-
-Route::group(['middleware' => 'ControlUser'], function () {
-    Route::get('/admin/nick', function(){ return "HOLA";} );
-
-});
-
+Route::get('/errorAccess',function(){ return view('accesoinvalido'); })->name('errorAccess');
 
 Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
     Route::get('/', function () { return view('dashboard'); });

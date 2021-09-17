@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <title>Acorn Admin Template | {{$title}}</title>
+    <title>Dashboard | {{$title}}</title>
     <meta name="description" content="{{$description}}"/>
     @include('_layout.head')
 </head>
@@ -54,7 +54,7 @@
     </main>
     @include('_layout.footer')
 </div>
-@include('_layout.modal_settings')
+<!-- include('_layout.modal_settings') !-->
 @include('_layout.modal_search')
 @include('_layout.scripts')
 </body>

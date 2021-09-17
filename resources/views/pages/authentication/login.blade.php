@@ -1,10 +1,22 @@
 @php
-    $title = 'Login Page';
-    $description = 'Login Page'
+    $title = 'Login';
+    $description = 'Login';
+    $html_tag_data = array('placement'=>"vertical",
+                           'behaviour'=>"pinned",
+                           'layout'=>"fluid",
+                           'radius'=>"rounded",
+                           'color'=>"light-blue",
+                           'navcolor'=>"default",
+                           'show'=>"true",
+                           'footer'=>"false"
+
+      );
+
 @endphp
 @extends('layout_full',[
 'title'=>$title,
-'description'=>$description
+'description'=>$description,
+'html_tag_data'=>$html_tag_data
 ])
 @section('css')
 @endsection
@@ -15,7 +27,7 @@
 @endsection
 
 @section('js_page')
-    <script src="{{ asset('/js/pages/auth.login.js') }}"></script>
+
 @endsection
 
 @section('content_left')
@@ -23,16 +35,13 @@
         <div class="w-100 w-lg-75 w-xxl-50">
             <div>
                 <div class="mb-5">
-                    <h1 class="display-3 text-white">Multiple Concepts</h1>
-                    <h1 class="display-3 text-white">Ready for Your Project</h1>
+                    <h1 class="display-3 text-white">Zutrics</h1>
                 </div>
                 <p class="h6 text-white lh-1-5 mb-5">
-                    Dynamically target high-payoff intellectual capital for customized technologies. Objectively
-                    integrate emerging core competencies before
-                    process-centric communities...
+                    Una plataforma de salud digital en función de la autogestión y prevención de factores de riesgo y sus complicaciones.
                 </p>
                 <div class="mb-5">
-                    <a class="btn btn-lg btn-outline-white" href="{{ url('/') }}">Learn More</a>
+                    <a class="btn btn-lg btn-outline-white" href="https://www.zutrics.com/" target="_blank">Visitanos</a>
                 </div>
             </div>
         </div>
@@ -40,41 +49,48 @@
 @endsection
 
 @section('content_right')
+
+
     <div
         class="sw-lg-70 min-h-100 bg-foreground d-flex justify-content-center align-items-center shadow-deep py-5 full-page-content-right-border">
         <div class="sw-lg-50 px-5">
             <div class="sh-11">
                 <a href="{{ url('/') }}">
-                    <div class="logo-default"></div>
+                    <div class="logo-default login"></div>
                 </a>
             </div>
             <div class="mb-5">
-                <h2 class="cta-1 mb-0 text-primary">Welcome,</h2>
-                <h2 class="cta-1 text-primary">let's get started!</h2>
+                <h2 class="cta-1 mb-0 text-primary">Bienvenid@s,</h2>
+
             </div>
             <div class="mb-5">
-                <p class="h6">Please use your credentials to login.</p>
-                <p class="h6">
-                    If you are not a member, please
-                    <a href="{{ url('/Pages/Authentication/Register') }}">register</a>
-                    .
-                </p>
+                <p class="h6">Por favor digita tus datos de acceso.</p>
+
             </div>
             <div>
-                <form id="loginForm" class="tooltip-end-bottom" novalidate>
+                <form id="loginForm" method="POST" class="tooltip-end-bottom">
+                    @csrf
                     <div class="mb-3 filled form-group tooltip-end-top">
                         <i data-cs-icon="email"></i>
-                        <input class="form-control" placeholder="Email" name="email"/>
+                        <input class="form-control" placeholder="Email" name="userName" id="userName" required />
                     </div>
                     <div class="mb-3 filled form-group tooltip-end-top">
                         <i data-cs-icon="lock-off"></i>
-                        <input class="form-control pe-7" name="password" type="password" placeholder="Password"/>
+                        <input class="form-control pe-7" name="passName" id="passName" type="password" placeholder="Password" required/>
                         <a class="text-small position-absolute t-3 e-3"
-                           href="{{ url('/Pages/Authentication/ForgotPassword') }}">Forgot?</a>
+                           href="{{ url('forgotpassword') }}">¿Olvide la contraseña?</a>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-primary">Login</button>
+
+                    @if (session('errorLogin'))
+                            {{ _html( array('e'=>'div',
+                                            'atts'=>array("class"=>"alert alert-danger"),
+                                            'text'=>"<i class='fa fa-info'></i> ".session('errorLogin') )) }}
+                    @endif
+
+                    <button type="submit" class="btn btn-lg btn-primary">Acceder</button>
                 </form>
             </div>
         </div>
     </div>
+
 @endsection

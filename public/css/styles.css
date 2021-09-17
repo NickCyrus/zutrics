@@ -11,7 +11,7 @@ Table of Contents
 |   \-- sizes
 |   \-- positions
 |   \-- shared
-|   
+|
 +-- themes
 |   |
 |   \-- rest
@@ -25,7 +25,7 @@ Table of Contents
 |   \-- light.red
 |   \-- light.purple
 |   \-- light.pink
-|   
+|
 +-- bootstrap
 |   |
 |   \-- accordion
@@ -49,7 +49,7 @@ Table of Contents
 |   \-- tables
 |   \-- toast
 |   \-- tooltip
-|   
+|
 +-- plugins
 |   |
 |   \-- autocomplete
@@ -77,7 +77,7 @@ Table of Contents
 |   \-- tour
 |   \-- validation
 |   \-- wizard
-|   
+|
 +-- layout
     |
     \-- base
@@ -3261,7 +3261,7 @@ img {
 }
 
 .fixed-background {
-  background: url("../img/background/background-blue.jpg") no-repeat center center fixed;
+  background: url("https://www.zutrics.app/campanas/campana-zutrics-nueva2.jpg") no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -14961,97 +14961,97 @@ html[data-color=dark-green] .logo .img,
 html[data-color=dark-red] .logo .img,
 html[data-color=dark-pink] .logo .img,
 html[data-color=dark-purple] .logo .img {
-  background-image: url(../img/logo/logo-light.svg);
+  background-image: url(../img/logo/logo-slogan.svg);
 }
 
 html[data-color=light-blue] .logo-default {
-  background-image: url(../img/logo/logo-blue-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-green] .logo-default {
-  background-image: url(../img/logo/logo-green-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-red] .logo-default {
-  background-image: url(../img/logo/logo-red-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-pink] .logo-default {
-  background-image: url(../img/logo/logo-pink-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-purple] .logo-default {
-  background-image: url(../img/logo/logo-purple-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=dark-blue] .logo-default {
-  background-image: url(../img/logo/logo-blue-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=dark-green] .logo-default {
-  background-image: url(../img/logo/logo-green-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=dark-red] .logo-default {
-  background-image: url(../img/logo/logo-red-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=dark-pink] .logo-default {
-  background-image: url(../img/logo/logo-pink-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=dark-purple] .logo-default {
-  background-image: url(../img/logo/logo-purple-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-blue][data-navcolor=light] .logo .img,
 html[data-color=dark-blue][data-navcolor=light] .logo .img {
-  background-image: url(../img/logo/logo-blue-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-green][data-navcolor=light] .logo .img,
 html[data-color=dark-green][data-navcolor=light] .logo .img {
-  background-image: url(../img/logo/logo-green-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-red][data-navcolor=light] .logo .img,
 html[data-color=dark-red][data-navcolor=light] .logo .img {
-  background-image: url(../img/logo/logo-red-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-pink][data-navcolor=light] .logo .img,
 html[data-color=dark-pink][data-navcolor=light] .logo .img {
-  background-image: url(../img/logo/logo-pink-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-purple][data-navcolor=light] .logo .img,
 html[data-color=dark-purple][data-navcolor=light] .logo .img {
-  background-image: url(../img/logo/logo-purple-light.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-blue][data-navcolor=dark] .logo .img,
 html[data-color=dark-blue][data-navcolor=dark] .logo .img {
-  background-image: url(../img/logo/logo-blue-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-green][data-navcolor=dark] .logo .img,
 html[data-color=dark-green][data-navcolor=dark] .logo .img {
-  background-image: url(../img/logo/logo-green-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-red][data-navcolor=dark] .logo .img,
 html[data-color=dark-red][data-navcolor=dark] .logo .img {
-  background-image: url(../img/logo/logo-red-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-pink][data-navcolor=dark] .logo .img,
 html[data-color=dark-pink][data-navcolor=dark] .logo .img {
-  background-image: url(../img/logo/logo-pink-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 html[data-color=light-purple][data-navcolor=dark] .logo .img,
 html[data-color=dark-purple][data-navcolor=dark] .logo .img {
-  background-image: url(../img/logo/logo-purple-dark.svg);
+  background-image: url(../images/logo-slogan.png);
 }
 
 .menu-container .label,
@@ -15425,4 +15425,12 @@ html[data-radius=standard] #settings .figure {
 
 html[data-show=true] .settings-button {
   opacity: 1;
+}
+
+
+
+.logo-default.login{
+    min-height: 67px !important;
+    background-image: url(../images/logo-slogan-2.png) !important;
+    width: 100% !important;
 }
