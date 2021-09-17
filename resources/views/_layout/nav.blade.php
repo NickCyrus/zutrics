@@ -190,23 +190,23 @@
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu">
             <li>
-                <a href="#dashboards" data-href="/Dashboards">
+                <a href="#dashboards" data-href="#">
                     <i data-cs-icon="home" class="icon" data-cs-size="18"></i>
                     <span class="label">Dashboards</span>
                 </a>
                 <ul id="dashboards">
                     <li>
-                        <a href="/Dashboards/Default">
+                        <a href="#">
                             <span class="label">Default</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Dashboards/Visual">
+                        <a href="#">
                             <span class="label">Visual</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Dashboards/Analytic">
+                        <a href="#">
                             <span class="label">Analytic</span>
                         </a>
                     </li>
@@ -219,27 +219,27 @@
                 </a>
                 <ul id="apps">
                     <li>
-                        <a href="/Apps/Calendar">
+                        <a href="#">
                             <span class="label">Calendar</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Apps/Chat">
+                        <a href="#">
                             <span class="label">Chat</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Apps/Contacts">
+                        <a href="#">
                             <span class="label">Contacts</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Apps/Mailbox">
+                        <a href="#">
                             <span class="label">Mailbox</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Apps/Tasks">
+                        <a href="#">
                             <span class="label">Tasks</span>
                         </a>
                     </li>
@@ -257,49 +257,49 @@
                         </a>
                         <ul id="authentication">
                             <li>
-                                <a href="/Pages/Authentication/Login">
+                                <a href="#">
                                     <span class="label">Login</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Authentication/Register">
+                                <a href="#">
                                     <span class="label">Register</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Authentication/ForgotPassword">
+                                <a href="#">
                                     <span class="label">Forgot Password</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Authentication/ResetPassword">
+                                <a href="#">
                                     <span class="label">Reset Password</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#blog" data-href="/Pages/Blog">
+                        <a href="#blog" data-href="#">
                             <span class="label">Blog</span>
                         </a>
                         <ul id="blog">
                             <li>
-                                <a href="/Pages/Blog/Home">
+                                <a href="#">
                                     <span class="label">Home</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Blog/Grid">
+                                <a href="#">
                                     <span class="label">Grid</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Blog/List">
+                                <a href="#">
                                     <span class="label">List</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Blog/Detail">
+                                <a href="#">
                                     <span class="label">Detail</span>
                                 </a>
                             </li>
@@ -311,76 +311,76 @@
                         </a>
                         <ul id="miscellaneous">
                             <li>
-                                <a href="/Pages/Miscellaneous/Faq">
+                                <a href="#">
                                     <span class="label">Faq</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/KnowledgeBase">
+                                <a href="#">
                                     <span class="label">Knowledge Base</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/Error">
+                                <a href="#">
                                     <span class="label">Error</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/ComingSoon">
+                                <a href="#">
                                     <span class="label">Coming Soon</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/Pricing">
+                                <a href="#">
                                     <span class="label">Pricing</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/Search">
+                                <a href="#">
                                     <span class="label">Search</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/Mailing">
+                                <a href="#">
                                     <span class="label">Mailing</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Miscellaneous/Empty">
+                                <a href="#">
                                     <span class="label">Empty</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#portfolio" data-href="/Pages/Portfolio">
+                        <a href="#portfolio" data-href="#">
                             <span class="label">Portfolio</span>
                         </a>
                         <ul id="portfolio">
                             <li>
-                                <a href="/Pages/Portfolio/Home">
+                                <a href="#">
                                     <span class="label">Home</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Portfolio/Detail">
+                                <a href="#">
                                     <span class="label">Detail</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#profile" data-href="/Pages/Profile">
+                        <a href="#profile" data-href="#">
                             <span class="label">Profile</span>
                         </a>
                         <ul id="profile">
                             <li>
-                                <a href="/Pages/Profile/Standard">
+                                <a href="#">
                                     <span class="label">Standard</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Pages/Profile/Settings">
+                                <a href="#">
                                     <span class="label">Settings</span>
                                 </a>
                             </li>
@@ -389,53 +389,53 @@
                 </ul>
             </li>
             <li>
-                <a href="#blocks" data-href="/Blocks">
+                <a href="#blocks" data-href="#">
                     <i data-cs-icon="grid-5" class="icon" data-cs-size="18"></i>
                     <span class="label">Blocks</span>
                 </a>
                 <ul id="blocks">
                     <li>
-                        <a href="/Blocks/Images">
+                        <a href="#">
                             <span class="label">Images</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/List">
+                        <a href="#">
                             <span class="label">List</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/TabularData">
+                        <a href="#">
                             <span class="label">Tabular Data</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Thumbnails">
+                        <a href="#">
                             <span class="label">Thumbnails</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Cta">
+                        <a href="#">
                             <span class="label">Cta</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Gallery">
+                        <a href="#">
                             <span class="label">Gallery</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Stats">
+                        <a href="#">
                             <span class="label">Stats</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Steps">
+                        <a href="#">
                             <span class="label">Steps</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/Blocks/Details">
+                        <a href="#">
                             <span class="label">Details</span>
                         </a>
                     </li>
@@ -453,102 +453,102 @@
                         </a>
                         <ul id="interfaceComponents">
                             <li>
-                                <a href="/Interface/Components/Accordion">
+                                <a href="#">
                                     <span class="label">Accordion</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Alerts">
+                                <a href="#">
                                     <span class="label">Alerts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Badge">
+                                <a href="#">
                                     <span class="label">Badge</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Breadcrumb">
+                                <a href="#">
                                     <span class="label">Breadcrumb</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Buttons">
+                                <a href="#">
                                     <span class="label">Buttons</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/ButtonGroup">
+                                <a href="#">
                                     <span class="label">Button Group</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Card">
+                                <a href="#">
                                     <span class="label">Card</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/CloseButton">
+                                <a href="#">
                                     <span class="label">Close Button</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Collapse">
+                                <a href="#">
                                     <span class="label">Collapse</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Dropdowns">
+                                <a href="#">
                                     <span class="label">Dropdowns</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/ListGroup">
+                                <a href="#">
                                     <span class="label">List Group</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Modal">
+                                <a href="#">
                                     <span class="label">Modal</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Navs">
+                                <a href="#">
                                     <span class="label">Navs</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Offcanvas">
+                                <a href="#">
                                     <span class="label">Offcanvas</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Pagination">
+                                <a href="#">
                                     <span class="label">Pagination</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Popovers">
+                                <a href="#">
                                     <span class="label">Popovers</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Progress">
+                                <a href="#">
                                     <span class="label">Progress</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Spinners">
+                                <a href="#">
                                     <span class="label">Spinners</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Toasts">
+                                <a href="#">
                                     <span class="label">Toasts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Components/Tooltips">
+                                <a href="#">
                                     <span class="label">Tooltips</span>
                                 </a>
                             </li>
@@ -560,92 +560,92 @@
                         </a>
                         <ul id="interfaceForms">
                             <li>
-                                <a href="/Interface/Forms/Layouts">
+                                <a href="#">
                                     <span class="label">Layouts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Forms/Validation">
+                                <a href="#">
                                     <span class="label">Validation</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Forms/Wizard">
+                                <a href="#">
                                     <span class="label">Wizard</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Forms/InputGroup">
+                                <a href="#">
                                     <span class="label">Input Group</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Forms/InputMask">
+                                <a href="#">
                                     <span class="label">Input Mask</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Forms/GenericForms">
+                                <a href="#">
                                     <span class="label">Generic Forms</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#formControls" data-href="/Interface/Forms/Controls">
+                                <a href="#formControls" data-href="#">
                                     <span class="label">Controls</span>
                                 </a>
                                 <ul id="formControls">
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Autocomplete">
+                                        <a href="#">
                                             <span class="label">Autocomplete</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/CheckboxRadio">
+                                        <a href="#">
                                             <span class="label">Checkbox-Radio</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/DatePicker">
+                                        <a href="#">
                                             <span class="label">Date Picker</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Dropzone">
+                                        <a href="#">
                                             <span class="label">Dropzone</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Editor">
+                                        <a href="#">
                                             <span class="label">Editor</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/InputSpinner">
+                                        <a href="#">
                                             <span class="label">Input Spinner</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Rating">
+                                        <a href="#">
                                             <span class="label">Rating</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Select2">
+                                        <a href="#">
                                             <span class="label">Select2</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Slider">
+                                        <a href="#">
                                             <span class="label">Slider</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/Tags">
+                                        <a href="#">
                                             <span class="label">Tags</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Forms/Controls/TimePicker">
+                                        <a href="#">
                                             <span class="label">Time Picker</span>
                                         </a>
                                     </li>
@@ -659,99 +659,99 @@
                         </a>
                         <ul id="interfacePlugins">
                             <li>
-                                <a href="/Interface/Plugins/Carousel">
+                                <a href="#">
                                     <span class="label">Carousel</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Charts">
+                                <a href="#">
                                     <span class="label">Charts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Clamp">
+                                <a href="#">
                                     <span class="label">Clamp</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/ContextMenu">
+                                <a href="#">
                                     <span class="label">Context Menu</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#pluginsDatatables" data-href="/Interface/Plugins/Datatables">
+                                <a href="#pluginsDatatables" data-href="#">
                                     <span class="label">Datatables</span>
                                 </a>
                                 <ul id="pluginsDatatables">
                                     <li>
-                                        <a href="/Interface/Plugins/Datatables/EditableRows">
+                                        <a href="#">
                                             <span class="label">Editable Rows</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Plugins/Datatables/EditableBoxed">
+                                        <a href="#">
                                             <span class="label">Editable Boxed</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Plugins/Datatables/RowsAjax">
+                                        <a href="#">
                                             <span class="label">Ajax Data</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Plugins/Datatables/RowsServerSide">
+                                        <a href="#">
                                             <span class="label">Server Side</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Plugins/Datatables/BoxedVariations">
+                                        <a href="#">
                                             <span class="label">Boxed Variations</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Lightbox">
+                                <a href="#">
                                     <span class="label">Lightbox</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/List">
+                                <a href="#">
                                     <span class="label">List</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Maps">
+                                <a href="#">
                                     <span class="label">Maps</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Notify">
+                                <a href="#">
                                     <span class="label">Notify</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Player">
+                                <a href="#">
                                     <span class="label">Players</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Progress">
+                                <a href="#">
                                     <span class="label">Progress</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Scrollbar">
+                                <a href="#">
                                     <span class="label">Scrollbar</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Shortcuts">
+                                <a href="#">
                                     <span class="label">Shortcuts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Plugins/Sortable">
+                                <a href="#">
                                     <span class="label">Sortable</span>
                                 </a>
                             </li>
@@ -763,39 +763,39 @@
                         </a>
                         <ul id="interfaceContent">
                             <li>
-                                <a href="#icons" data-href="/Interface/Content/Icons">
+                                <a href="#icons" data-href="#">
                                     <span class="label">Icons</span>
                                 </a>
                                 <ul id="icons">
                                     <li>
-                                        <a href="/Interface/Content/Icons/CSLineIcons">
+                                        <a href="#">
                                             <span class="label">CS Line Icons</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Icons/CSLineInterfaceIcons">
+                                        <a href="#">
                                             <span class="label">CS Interface Icons</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Icons/BootstrapIcons">
+                                        <a href="#">
                                             <span class="label">Bootstrap Icons</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="/Interface/Content/Images">
+                                <a href="#">
                                     <span class="label">Images</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Content/Tables">
+                                <a href="#">
                                     <span class="label">Tables</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/Interface/Content/Typography">
+                                <a href="#">
                                     <span class="label">Typography</span>
                                 </a>
                             </li>
@@ -805,33 +805,33 @@
                                 </a>
                                 <ul id="menuVarieties">
                                     <li>
-                                        <a href="/Interface/Content/Menu/HorizontalStandard">
+                                        <a href="#">
                                             <span class="label">Horizontal</span>
                                         </a>
                                     </li>
                                     <li></li>
                                     <li>
-                                        <a href="/Interface/Content/Menu/VerticalStandard">
+                                        <a href="#">
                                             <span class="label">Vertical</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Menu/VerticalSemiHidden">
+                                        <a href="#">
                                             <span class="label">Vertical Hidden</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Menu/VerticalNoSemiHidden">
+                                        <a href="#">
                                             <span class="label">Vertical No Hidden</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Menu/MobileOnly">
+                                        <a href="#">
                                             <span class="label">Mobile Only</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/Interface/Content/Menu/Sidebar">
+                                        <a href="#">
                                             <span class="label">Sidebar</span>
                                         </a>
                                     </li>

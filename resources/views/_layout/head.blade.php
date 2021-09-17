@@ -5,7 +5,7 @@
 <link rel="icon" type="image/png" href="{{ asset('/images/logo-zutrics-logo.png') }}" sizes="128x128"/>
 <meta name="application-name" content="&nbsp;"/>
 <meta name="msapplication-TileColor" content="#FFFFFF"/>
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Favicon Tags End -->
 <!-- Font Tags Start -->
 <link rel="preconnect" href="https://fonts.gstatic.com"/>

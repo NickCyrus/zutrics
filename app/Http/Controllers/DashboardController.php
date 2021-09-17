@@ -13,7 +13,7 @@ class DashboardController extends Controller
 
             $theme = Config::getConfig('theme');
             if (!$theme->value)
-                return view('dashboard.selecttheme');
+                return view('pages.config.selecttheme');
              else
                 return view('dashboard');
 

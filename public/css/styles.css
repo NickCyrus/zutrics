@@ -15434,3 +15434,7 @@ html[data-show=true] .settings-button {
     background-image: url(../images/logo-slogan-2.png) !important;
     width: 100% !important;
 }
+
+.hide{
+    display:none;
+}

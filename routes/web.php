@@ -24,7 +24,7 @@ Route::get('/errorAccess',function(){ return view('accesoinvalido'); })->name('e
 
 Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
 
-    Route::get('/', function () { return view('dashboard'); });
+    Route::get('/', [DashboardController::class, 'index']);
 
 
 

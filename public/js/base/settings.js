@@ -84,17 +84,17 @@ class Settings {
   }
 
   _init () {
-      /*
+
     this._mergeOverridePrefix();
     this._mergeAttributesFromStorage();
     this._mergeOverrides();
     this._mergeUrlParameters();
     this._modifyLinksCarryParams();
-    this._setAttributes();
+    // this._setAttributes();
     this._setActiveOptions();
     this._addListeners();
     this._setVisibility();
-    */
+
   }
 
   _mergeAttributesFromStorage () {
@@ -238,7 +238,7 @@ class Settings {
     }
     if (this.settings.attributes[id] !== value) {
       this.settings.attributes[id] = value;
-      localStorage.setItem(this.settings.storagePrefix + id, value);
+      // localStorage.setItem(this.settings.storagePrefix + id, value);
       this._setActiveOptions();
       if (this.attributeOptions[id].update) {
         document.documentElement.setAttribute(this.attributeOptions[id].attribute, value);
