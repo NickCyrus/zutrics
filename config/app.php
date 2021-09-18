@@ -231,6 +231,7 @@ return [
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'Tools' => App\Http\Controllers\ToolsController::class,
         'Config' => App\Http\Controllers\ConfigController::class,
+        'Theme' => App\Http\Controllers\ThemeController::class,
 
     ],
 

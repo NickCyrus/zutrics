@@ -14,4 +14,9 @@ class ConfigController extends Controller
         }
     }
 
+    static public function update($key = '' , $value){
+        DB::table('ac_configs')->where('keyconf', $key)->update(['value'=>$value]);
+    }
+    
+
 }

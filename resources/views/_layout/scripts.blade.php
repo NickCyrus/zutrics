@@ -15,6 +15,8 @@
 <script src="{{ asset('/js/base/settings.js') }}"></script>
 <script src="{{ asset('/js/base/init.js') }}"></script>
 <!-- Template Base Scripts End -->
+<script src="{{ asset('/assets/plugins/jconfirm/js/jquery-confirm.js') }}"></script>
+<script src="{{ asset('/js/function.js') }}"></script>
 <!-- Page Specific Scripts Start -->
 @yield('js_page')
 <script src="{{ asset('/js/common.js') }}"></script>

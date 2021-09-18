@@ -1,5 +1,7 @@
 @php
     use App\Http\Controllers\ThemeController;
+
+
     /*
     data-url-prefix="/"
     data-footer="true"
@@ -12,7 +14,11 @@
     data-show="true"
     ata-dimension="desktop"
     */
-    $html_tag_data = array('placement'=>"vertical",
+    ThemeController::getThemeOption();
+
+    $html_tag_data = ThemeController::getThemeOption(); 
+    
+        /*array('placement'=>"vertical",
                            'behaviour'=>"pinned",
                            'layout'=>"fluid",
                            'radius'=>"rounded",
@@ -23,6 +29,7 @@
                            'url-prefix'=>"/",
                            'dimension'=>"desktop"
                             );
+                            */
 @endphp
 <!DOCTYPE html>
 <html lang="en" data-url-prefix="/" data-footer="true"

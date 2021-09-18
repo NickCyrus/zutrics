@@ -11,6 +11,7 @@ use App\Http\Controllers\TrafosController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\logsusers;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ThemeController;
 
 Route::get('/login', function () {  return view('login'); });
 
@@ -46,6 +47,8 @@ Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
     Route::get('tools/showicons', function () { return view('tools.showIcons'); });
     Route::get('logsusers/reloadLogsUser/{id}', [logsusers::class,'reloadLogsUser']);
     Route::resource('logsusers', logsusers::class);
+
+    Route::post('savetheme', [ThemeController::class, 'save']);
 
     /*Ajax*/
 

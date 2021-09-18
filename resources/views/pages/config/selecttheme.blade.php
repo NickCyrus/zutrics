@@ -38,9 +38,10 @@
 
                 <div class="text-center">
                     <button class="btn btn-primary" id="btnStartTheme" data-bs-toggle="modal" data-bs-target="#settings">Comensar</button>
-
-                    <button class="btn btn-success hide "  id="btnSaveTheme" >Guardar cambios</button>
-
+                    <form id="loginForm" method="POST" class="tooltip-end-bottom" action="savetheme">
+                        @csrf
+                        <button class="btn btn-success hide "  id="btnSaveTheme" >Guardar cambios</button>
+                    </form>       
 
                 </div>
             </div>
@@ -63,7 +64,7 @@
                 if ( $('#themeOption'+data.parent).length){
                     $('#themeOption'+data.parent).val(data.value);
                 }else{
-                    $('body').append('<input type="text" class="themeOption" id="themeOption'+data.parent+'" name="themeOption'+data.parent+'" value="'+data.value+'" />');
+                    $('#loginForm').append('<input type="hidden" class="themeOption" id="themeOption'+data.parent+'" name="'+data.parent+'" value="'+data.value+'" />');
                 }
 
             })

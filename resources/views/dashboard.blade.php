@@ -1,11 +1,10 @@
 @php
-    $html_tag_data = [];
-    $title = 'Pages';
-    $description = 'Layouts that are focused on different project needs. Contains html blocks and specific plugins that are fit for the context.';
+    $title = 'Dashboard';
+    $description = '';
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('layout',[
-'html_tag_data'=>$html_tag_data,
+//'html_tag_data'=>$html_tag_data,
 'title'=>$title,
 'description'=>$description
 ])
@@ -17,6 +16,12 @@
 @endsection
 
 @section('js_page')
+<script>
+    @if (session('alert'))
+            fn.alert('{{session('alert')}}')
+            @php Session::forget('yourKeyGoesHere') @endphp
+    @endif
+</script>
 @endsection
 
 @section('content')
