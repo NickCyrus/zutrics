@@ -29,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrap();
         /* Start APP*/
-            View::share('nameApp', (object)["value"=>'ASECAP']);
-            View::share('shortNameApp', (object)["value"=>'ASECAP']);
+            View::share('nameApp', (object)["value"=>'Dashboard']);
+            View::share('shortNameApp', (object)["value"=>'Dashboard']);
     }
 
 }

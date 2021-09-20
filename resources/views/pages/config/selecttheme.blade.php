@@ -43,7 +43,8 @@
                 <p>Juega con el editor de temas para lográn la apariencia deseada.</p>
 
                 <div class="text-center">
-                    <button class="btn btn-primary" id="btnStartTheme" data-bs-toggle="modal" data-bs-target="#settings">Comensar</button>
+                    <a class="btn btn-werning" id="btnStartTheme" data-bs-toggle="modal" href="/dashboard">Ignorar</a>
+                    <button class="btn btn-primary" id="btnStartTheme" data-bs-toggle="modal" data-bs-target="#settings">Comenzar</button>
                     <form id="loginForm" method="POST" class="tooltip-end-bottom" action="savetheme">
                         @csrf
                         @isset($html_tag_data) @foreach ($html_tag_data as $key=> $value)
