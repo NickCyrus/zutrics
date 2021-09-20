@@ -15,7 +15,7 @@ class DashboardController extends Controller
             if (!$theme->value)
                 return view('pages.config.selecttheme');
              else
-                return view('dashboard');
+                return view('dashboards.default');
 
         }
 
