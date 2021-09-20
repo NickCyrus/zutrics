@@ -41,12 +41,15 @@ class UserController extends Controller
 
         $datos = $request->all();
         $user = Auth::user(); // Obtenga la instancia del usuario en sesión
-        $password = bcrypt($request->pass1); // Encripte el password
-        $user->password = $password; // Rellene el usuario con el nuevo password ya encriptado
-        $user->save(); // Guarde el usuario
-        $this->log('Actualizo al contraseña de su cuenta','update');
+        if (isset($request->pass1)){
+            $password = bcrypt($request->pass1); // Encripte el password
+            $user->password = $password; // Rellene el usuario con el nuevo password ya encriptado
+            $user->save(); // Guarde el usuario
+            $this->log('Actualizo al contraseña de su cuenta','update');
+        }
         $records = LogLogin::where('userid', $user->id)->limit(30)->get();
         $logact  = LogAction::where('userid', $user->id)->orderby('id','desc')->limit(30)->get();
+        
         return view('profile',["User" =>$user, "Response"=>'success', "records"=>$records , "logact"=>$logact]);
    }
 

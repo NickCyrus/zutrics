@@ -75,5 +75,10 @@ class LoginAdmin extends Controller
              }
         }
 
+        static function getInfoLogin(){
+            
+            return User::where('id', Auth::User()->id)->first();
+        }
+
 
 }

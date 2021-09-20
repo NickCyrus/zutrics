@@ -1,3 +1,7 @@
+<script>
+    var urlHome = "{{ URL::to('/')}}";
+</script>
+
 <!-- Vendor Scripts Start -->
 <script src="{{ asset('/js/vendor/jquery-3.5.1.min.js') }}"></script>
 <script src="{{ asset('/js/vendor/bootstrap.bundle.min.js') }}"></script>
@@ -22,3 +26,4 @@
 <script src="{{ asset('/js/common.js') }}"></script>
 <!-- Page Specific Scripts End -->
 <script src="{{ asset('/js/scripts.js') }}"></script>
+<script src="{{ asset('/js/site.js') }}"></script>

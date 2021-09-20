@@ -107,6 +107,18 @@ class PerfilesController extends Controller
 
     }
 
+    public static function selectPerfilesFrom($pefil){
+
+        $items = profile::select('profname as label', 'id as value')->get();
+
+         
+        return view('component.select',["items" =>$items, "value"=>$pefil, "name"=>'profid' , 'required'=>true ]);
+
+
+    }
+
+    
+
     public function edit($id)
     {
         $this->run();

@@ -4,7 +4,6 @@
     $breadcrumbs = ["/"=>"Home"]
 @endphp
 @extends('layout',[
-//'html_tag_data'=>$html_tag_data,
 'title'=>$title,
 'description'=>$description
 ])

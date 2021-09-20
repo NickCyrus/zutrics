@@ -31,10 +31,10 @@
                                         @foreach ($modolosapp as $modulos )
                                             <tr>
                                                 <td>{{$modulos->nameapp}}</td>
-                                                <td><input @if(isset($permod) && $permod[$modulos->id]['aview']) checked @endif class="form-control" type="checkbox" name="actionView[{{$modulos->id}}]" value="1" /></td>
-                                                <td><input @if(isset($permod) && $permod[$modulos->id]['anew']) checked @endif class="form-control" type="checkbox" name="actionNew[{{$modulos->id}}]" value="1" /></td>
-                                                <td><input @if(isset($permod) && $permod[$modulos->id]['aedit']) checked @endif class="form-control" type="checkbox" name="actionEdit[{{$modulos->id}}]" value="1" /></td>
-                                                <td><input @if(isset($permod) && $permod[$modulos->id]['adelete']) checked @endif class="form-control" type="checkbox" name="actionDele[{{$modulos->id}}]" value="1" /></td>
+                                                <td class="text-center"><input @if(isset($permod) && $permod[$modulos->id]['aview']) checked @endif class="form-check-input" type="checkbox" name="actionView[{{$modulos->id}}]" value="1" /></td>
+                                                <td class="text-center"><input @if(isset($permod) && $permod[$modulos->id]['anew']) checked @endif class="form-check-input" type="checkbox" name="actionNew[{{$modulos->id}}]" value="1" /></td>
+                                                <td class="text-center"><input @if(isset($permod) && $permod[$modulos->id]['aedit']) checked @endif class="form-check-input" type="checkbox" name="actionEdit[{{$modulos->id}}]" value="1" /></td>
+                                                <td class="text-center"><input @if(isset($permod) && $permod[$modulos->id]['adelete']) checked @endif class="form-check-input" type="checkbox" name="actionDele[{{$modulos->id}}]" value="1" /></td>
                                             </tr>
                                         @endforeach
                                     @endif

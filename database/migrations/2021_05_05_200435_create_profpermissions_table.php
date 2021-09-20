@@ -31,7 +31,8 @@ class CreateProfpermissionsTable extends Migration
             ["profid" => 1,"modappid"=>1, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ],
             ["profid" => 1,"modappid"=>2, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ],
             ["profid" => 1,"modappid"=>3, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ],
-            ["profid" => 1,"modappid"=>4, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ]
+            ["profid" => 1,"modappid"=>4, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ],
+            ["profid" => 1,"modappid"=>5, "aview"=>1, "anew"=>1, "aedit"=>1, "adelete"=>1, "created_at"=> Carbon::now() ]
 
         ],true);
     }

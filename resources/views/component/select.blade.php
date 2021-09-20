@@ -1,5 +1,5 @@
 <select @if (isset($multiple) && $multiple ){{'multiple'}} @endif name="@if (isset($name)){{$name}}@endif"
-id="@if (isset($name)){{$name}}@endif" class="form-control @if (isset($class)) {{$class}}@endif"
+id="@if (isset($name)){{$name}}@endif" class="form-control form-select @if (isset($class)) {{$class}}@endif"
 onchange="@if (isset($onchange)){{$onchange}}@endif" @if (isset($dataattr)){{$dataattr}}@endif
 @if (isset($required) && $required == true) required @endif   >
 

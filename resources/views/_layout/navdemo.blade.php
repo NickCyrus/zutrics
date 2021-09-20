@@ -54,7 +54,62 @@
     <div class="menu-container flex-grow-1">
         <ul id="menu" class="menu">
 
-            {{MenuleftController::buildMenuLeft()}}
+            <li>
+                <a href="#dashboards" data-href="/Dashboards">
+                    <i data-cs-icon="home" class="icon" data-cs-size="18"></i>
+                    <span class="label">Dashboards</span>
+                </a>
+                <ul id="dashboards">
+                    <li>
+                        <a href="#">
+                            <span class="label">Default</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label">Visual</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label">Analytic</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#apps" data-href="/Apps">
+                    <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                    <span class="label">Apps</span>
+                </a>
+                <ul id="apps">
+                    <li>
+                        <a href="#">
+                            <span class="label">Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label">Chat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label">Contacts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#>
+                            <span class="label">Mailbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="label">Tasks</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             
              
         </ul>

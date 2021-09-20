@@ -22,7 +22,6 @@
                                 <th>Nombre</th>
                                 <th>Email</th>
                                 <th>Perfil</th>
-                                <th>Empresa</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -33,7 +32,6 @@
                                     <td>{{$module->name}}</td>
                                     <td>{{$module->email}}</td>
                                     <td>{{$module->profname}}</td>
-                                    <td>{{$module->empresas}}</td>
                                     <td>
                                         @php
                                             $edit   = true;

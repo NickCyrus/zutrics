@@ -1,5 +1,8 @@
-@extends('layout')
-@section('title', $infoApp->nameapp)
+@extends('layout',[
+    'title'=>'Modulos',
+    'description'=>''
+])
+
 @section('content')
 
         <div class="card">

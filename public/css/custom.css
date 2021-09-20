@@ -1,4 +1,7 @@
 @import url('../assets/fonts/simple-line-icons/simple-line-icons.css');
+@import url("../assets/fonts/datta/datta-icon.css");
+@import url("../assets/fonts/feather/css/feather.css");
+
 .hand{ cursor: pointer !important; }
 
 .table-slim td, .table-slim th{
@@ -49,4 +52,17 @@ tr.cap{
 
 .select2-container--default .select2-selection--multiple{
     min-height: 43px;
+}
+
+
+.i-block{
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.btn-default{
+    background: #3c6097 !important;
 }

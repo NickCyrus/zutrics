@@ -63,14 +63,7 @@ class UsuariosController extends Controller
         $datos = DB::table('ac_users')
                         ->leftJoin('ac_profiles','ac_users.profid','ac_profiles.id')
                         ->select('ac_users.*', 'profname',
-                         DB::raw('( CASE
-                         WHEN (SELECT COUNT(id) FROM ac_enterprise_rels WHERE ac_enterprise_rels.userid = ac_users.id) = 1 THEN  (SELECT rs FROM ac_enterprise_rels, ac_enterprises WHERE ac_enterprise_rels.userid = ac_users.id AND ac_enterprise_rels.enterpid = ac_enterprises.id )
-                         WHEN (SELECT COUNT(id) FROM ac_enterprise_rels WHERE ac_enterprise_rels.userid = ac_users.id) > 1 THEN  (SELECT CONCAT(COUNT(id),\' Empresas asociadas \') FROM ac_enterprise_rels WHERE ac_enterprise_rels.userid = ac_users.id)
-                         ELSE \'Sin empresa\' END) AS empresas')
                  )->paginate(Tools::paginacion());
-
-        // $datos =User::paginate( Tools::paginacion());
-
          return view($this->slug.'.index', ['modules'=> $datos , 'infoApp' =>  $this->infoApp[0] , 'permisos'=> $this->permisos[0] ]  );
     }
 
@@ -121,24 +114,12 @@ class UsuariosController extends Controller
         //
     }
 
-    function getEmpresasUser($id){
-
-            $empreas = enterprise_rel::where('userid', $id)->get();
-            if (count($empreas)){
-                    foreach($empreas as $empresa){
-                        $lista[] = $empresa->enterpid;
-                    }
-                    return $lista;
-            }else
-                return '';
-    }
-
+     
     public function edit($id)
     {
         $this->run();
         $datos = User::find($id);
-        $empresas = $this->getEmpresasUser($id);
-        return view($this->slug.'.edit', ["modules"=>$datos, 'infoApp' =>  $this->infoApp[0] , 'empresas' => $empresas ] );
+        return view($this->slug.'.edit', ["modules"=>$datos, 'infoApp' =>  $this->infoApp[0] ] );
     }
 
 

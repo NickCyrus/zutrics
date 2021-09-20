@@ -5,7 +5,7 @@
                 <a href="{{ url($item->urlapp) }}" class="nav-link ">
                         <span class="pcoded-micon">
                             <i class="{{$item->iconapp}}"></i></span>
-                                <span class="pcoded-mtext">{{$item->nameapp}}</span>
+                             <span class="label">{{$item->nameapp}}</span>
                 </a>
             </li>
         @endforeach

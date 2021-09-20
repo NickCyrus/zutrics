@@ -1,28 +1,21 @@
 @php
     use App\Http\Controllers\ThemeController;
-    /*
-    data-url-prefix="/"
-    data-footer="true"
-    data-placement="horizontal"
-    data-behaviour="pinned"
-    data-layout="fluid"
-    data-radius="rounded"
-    data-color="light-blue"
-    data-navcolor="default"
-    data-show="true"
-    ata-dimension="desktop"
-    */
-    $html_tag_data = array('placement'=>"vertical",
-                           'behaviour'=>"pinned",
-                           'layout'=>"fluid",
-                           'radius'=>"rounded",
-                           'color'=>"light-blue",
-                           'navcolor'=>"default",
-                           'show'=>"true",
-                           'footer'=>"true",
-                           'url-prefix'=>"/",
-                           'dimension'=>"desktop"
-                            );
+    $html_tag_data = ThemeController::getThemeOption(); 
+    
+    if (!$html_tag_data){
+
+        $html_tag_data = array('placement'=>"vertical",
+                            'behaviour'=>"pinned",
+                            'layout'=>"fluid",
+                            'radius'=>"rounded",
+                            'color'=>"light-blue",
+                            'navcolor'=>"default",
+                            'show'=>"true",
+                            'footer'=>"true",
+                            'url-prefix'=>"/",
+                            'dimension'=>"desktop"
+                                );
+    }
 @endphp
 <!DOCTYPE html>
 <html lang="en" data-url-prefix="/" data-footer="true"
@@ -47,7 +40,7 @@
         @endforeach
         @endisset
     >
-        @include('_layout.nav')
+        @include('_layout.navdemo')
     </div>
     <main>
         @yield('content')

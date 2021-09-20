@@ -9,6 +9,11 @@ class ThemeController extends Controller
 {
    //
 
+   public function index(){
+      return view('pages.config.selecttheme');
+   }
+
+
    public function save(Request $req ){
 
       $datos = $req->except('_token');

@@ -1,8 +1,14 @@
 @php
-    $html_tag_data = [];
+    
+    use App\Http\Controllers\ThemeController;
+    ThemeController::getThemeOption();
+    $html_tag_data = ThemeController::getThemeOption(); 
+
     $title = 'Selecionar Tema';
     $description = 'Selecionar Tema';
-    $breadcrumbs = ["#"=>"Home", "/#"=>"Pages", "#/Pages/Miscellaneous"=>"Miscellaneous"]
+    $breadcrumbs = ["#"=>"Home", "/#"=>"Pages", "#/Pages/Miscellaneous"=>"Miscellaneous"];
+ 
+    
 @endphp
 
 @extends('layoutdemo',['html_tag_data'=>$html_tag_data,'title'=>$title,'description'=>$description])
@@ -40,6 +46,10 @@
                     <button class="btn btn-primary" id="btnStartTheme" data-bs-toggle="modal" data-bs-target="#settings">Comensar</button>
                     <form id="loginForm" method="POST" class="tooltip-end-bottom" action="savetheme">
                         @csrf
+                        @isset($html_tag_data) @foreach ($html_tag_data as $key=> $value)
+                            <input type="hidden" class="themeOption" id="themeOption{{$key}}" name="{{$key}}" value="{{$value}}" />
+                        @endforeach
+                      @endisset
                         <button class="btn btn-success hide "  id="btnSaveTheme" >Guardar cambios</button>
                     </form>       
 

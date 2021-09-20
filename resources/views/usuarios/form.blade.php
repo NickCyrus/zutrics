@@ -32,22 +32,6 @@
                     </div>
 
                     <div class="col-md-4 mb-3">
-                        <label>Empresa</label>
-<<<<<<< HEAD
-                        {{EmpresasController::selectEnterPriceFrom($empresas)}}
-=======
-                            {{Tools::selectHTML(["model"=>'enterprise',
-                                "key"=>'ID_EMP',
-                                "label"=>"DESCRIPCION",
-                                "class"=>'select2',
-                                "multiple"=>true,
-                                "selected"=>old('empresas',$empresas),
-                                "name"=>"empresas[]"
-                           ])}}
->>>>>>> c7b464112fbfd842881da363014e38b53ef83b22
-                    </div>
-
-                    <div class="col-md-4 mb-3">
                         <label>Contraseña</label>
                         <input type="password" class="form-control" id="password" name="password" value=""  {{isset($isnew) ? 'required' : ''}}   placeholder="Contraseña">
                         @error('password')

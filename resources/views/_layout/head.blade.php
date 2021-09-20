@@ -24,5 +24,17 @@
 <!-- Template Base Styles Start -->
 <link rel="stylesheet" href="{{ asset('/css/styles.css') }}"/>
 <link rel="stylesheet" href="{{ asset('/css/main.css') }}"/>
+<!-- fontawesome icon -->
+<link rel="stylesheet" href="{{ asset('assets/fonts/fontawesome/css/fontawesome-all.min.css') }}">
+<!-- animation css -->
+<link rel="stylesheet" href="{{ asset('assets/plugins/animation/css/animate.min.css') }}">
+<!-- jconfirm css -->
+<link rel="stylesheet" href="{{ asset('assets/plugins/jconfirm/css/jquery-confirm.css') }}">
+<!-- select 2 !-->
+<link rel="stylesheet" href="{{ asset('assets/plugins/select2/css/select2.css') }}" />
+<!-- custom -->
+<link rel="stylesheet" href="{{ asset('assets/css/paleta1.css') }}">
+<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
 <!-- Template Base Styles End -->
 <script src="{{ asset('/js/base/loader.js') }}"></script>

@@ -12,7 +12,7 @@
                         <i class="feather icon-user"></i> Perfil de usuario
                     </h5>
                 </div>
-                <div class="card-block">
+                <div class="card-block p-3">
                     <div class="row">
                         @if (isset($Response))
                             <div class="col-md-12 mb-3">

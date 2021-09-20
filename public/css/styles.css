@@ -13967,6 +13967,7 @@ html[data-placement=vertical] .nav-container .logo .img {
 html[data-placement=horizontal] .nav-container .logo .img,
 html[data-placement=vertical] .nav-container .logo .img {
   background-repeat: no-repeat;
+  background-size: contain;
 }
 html[data-placement=horizontal] .nav-container .dropdown-menu,
 html[data-placement=vertical] .nav-container .dropdown-menu {

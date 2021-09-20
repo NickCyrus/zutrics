@@ -27,10 +27,7 @@ Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
 
     Route::get('/', [DashboardController::class, 'index']);
 
-
-
-    Route::get('dashboard/reloadEnterPrice/{id}', [DashboardController::class,'reloadEnterPrice']);
-    Route::get('dashboard/{id}/enterprice', [DashboardController::class,'selectenterprice']);
+    Route::get('/tema', [ThemeController::class, 'index']);
 
     Route::resource('dashboard', DashboardController::class);
 
@@ -47,7 +44,6 @@ Route::group(['middleware' => ['auth', 'ControlUser'] ], function () {
     Route::get('tools/showicons', function () { return view('tools.showIcons'); });
     Route::get('logsusers/reloadLogsUser/{id}', [logsusers::class,'reloadLogsUser']);
     Route::resource('logsusers', logsusers::class);
-
     Route::post('savetheme', [ThemeController::class, 'save']);
 
     /*Ajax*/
